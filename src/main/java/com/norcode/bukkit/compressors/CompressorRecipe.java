@@ -2,6 +2,7 @@ package com.norcode.bukkit.compressors;
 import java.util.Arrays;
 import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
 
 
@@ -14,7 +15,16 @@ public class CompressorRecipe {
         this.result = result;
         this.steps = Arrays.asList(steps);
     }
-    
+
+    public String toString() {
+        String out = "";
+        for (ItemStack s: steps) {
+            out += s.toString() + " => ";
+        }
+        out += getResult().toString();
+        return out;
+    }
+
     public ItemStack getResult() {
         return result;
     }
@@ -29,8 +39,9 @@ public class CompressorRecipe {
     }
     public boolean isSourceMaterial(ItemStack stack) {
         for (ItemStack s: steps) {
-            if (s.isSimilar(stack)) {
+            if (stack.isSimilar(s)) {
                 return true;
+            } else {
             }
         }
         return false;

@@ -1,0 +1,38 @@
+world-selection: whitelist
+world-list:
+  - world
+  - world_the_end
+  - world_nether
+
+recipes:
+  iron_block:
+    - IRON_BLOCK:1
+    - IRON_INGOT:9
+  gold_block:
+    - GOLD_BLOCK:1
+    - GOLD_INGOT:9
+    - GOLD_NUGGET:9
+  gold_ingot:
+    - GOLD_INGOT:1
+    - GOLD_NUGGET:9
+  diamond_block:
+    - DIAMOND_BLOCK:1
+    - DIAMOND:9
+  emerald_block:
+    - EMERALD_BLOCK:1
+    - EMERALD:9
+  redstone_block:
+    - REDSTONE_BLOCK:1
+    - REDSTONE:9
+  lapis_block:
+    - LAPIS_BLOCK:1
+    - INK_SACK:4:9
+  snow_block:
+    - SNOW_BLOCK:1
+    - SNOW_BALL:9
+  melon_block:
+    - MELON_BLOCK:1
+    - MELON:9
+  glowstone:
+    - GLOWSTONE:1
+    - GLOWSTONE_DUST:4

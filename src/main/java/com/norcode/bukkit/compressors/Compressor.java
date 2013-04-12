@@ -71,10 +71,9 @@ public class Compressor {
                 }
             }
         }
-        
         this.sort();
     }
-    
+
     public void sort() {
         Inventory inv = this.hopper.getInventory();
         ItemStack s = null;
