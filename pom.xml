@@ -3,17 +3,28 @@
   <groupId>com.norcode.bukkit.compressors</groupId>
   <artifactId>Compressors</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-    <repositories>
-    <repository>
-      <id>bukkit-releases-repo</id>
-      <url>http://repo.bukkit.org/content/repositories/releases/</url>
-    </repository>
-  </repositories>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <build.major>1.0</build.major>
+    <build.type>SNAPSHOT</build.type>
+    <build.number>1</build.number>
+    <build.filename>${artifactId}</build.filename>
+  </properties>
+
+  <build>
+    <finalName>${project.name}</finalName>
+  </build>
+
   <dependencies>
     <dependency>
-      <groupId>org.bukkit</groupId>
-        <artifactId>bukkit</artifactId>
-        <version>1.5.1-R0.1</version>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.9-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/../spigot/spigot.jar</systemPath>
     </dependency>
   </dependencies>
 </project>

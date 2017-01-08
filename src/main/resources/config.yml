@@ -1,8 +1,5 @@
-world-selection: whitelist
-world-list:
-  - world
-  - world_the_end
-  - world_nether
+world-selection: blacklist
+world-list: []
 
 recipes:
   iron_block:
